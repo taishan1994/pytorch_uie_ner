@@ -1,5 +1,5 @@
 # pytorch_uie_ner
-基于pytorch的百度UIE命名实体识别，源代码来源：[here]([heiheiyoyo/uie_pytorch: PaddleNLP UIE模型的PyTorch版实现 (github.com)](https://github.com/heiheiyoyo/uie_pytorch))。
+基于pytorch的百度UIE命名实体识别，源代码来源：[here](https://github.com/heiheiyoyo/uie_pytorch)。
 
 百度UIE通用信息抽取的样例一般都是使用doccano标注数据，这里介绍如何使用通用数据集，利用UIE进行微调。
 
