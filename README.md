@@ -27,7 +27,7 @@ colorama
 		python doccano.py \
 		    --doccano_file ./data/cner/mid_data/train.json \
 		    --task_type "ext" \  # ext表示抽取任务
-		    --splits 1.0 0.0 0.0 \  # 训练、验证、测试数据的比例。不对数据进行切分，因此将第一位设置为1.0
+		    --splits 1.0 0.0 0.0 \  # 训练、验证、测试数据的比例。训练，不对数据进行切分，因此将第一位设置为1.0
 		    --save_dir ./data/cner/final_data/ \
 		    --negative_ratio 3  # 生成负样本的比率
 		```
@@ -37,7 +37,7 @@ colorama
 		python doccano.py \
 		    --doccano_file ./data/cner/mid_data/dev.json \
 		    --task_type "ext" \  # ext表示抽取任务
-		    --splits 0.0 1.0 0.0 \  # 训练、验证、测试数据的比例。不对数据进行切分，因此将第一位设置为1.0
+		    --splits 0.0 1.0 0.0 \  # 训练、验证、测试数据的比例。验证，因此将第二位设置为1.0
 		    --save_dir ./data/cner/final_data/ \
 		    --negative_ratio 0  # 生成负样本的比率
 		```
@@ -47,7 +47,7 @@ colorama
 		python doccano.py \
 		    --doccano_file ./data/cner/mid_data/test.json \
 		    --task_type "ext" \  # ext表示抽取任务
-		    --splits 0.0 0.0 1.0 \  # 训练、验证、测试数据的比例。不对数据进行切分，因此将第一位设置为1.0
+		    --splits 0.0 0.0 1.0 \  # 训练、验证、测试数据的比例。测试，因此将第三位设置为1.0
 		    --save_dir ./data/cner/final_data/ \
 		    --negative_ratio 0  # 生成负样本的比率
 		```
