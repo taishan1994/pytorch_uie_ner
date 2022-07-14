@@ -74,7 +74,7 @@ colorama
 - 4、开始微调：
 
 	```python
-	!python finetune.py \
+	python finetune.py \
 	    --train_path "./data/cner/final_data/train.txt" \
 	    --dev_path "./data/cner/final_data/dev.txt" \
 	    --save_dir "./checkpoint" \
@@ -95,7 +95,7 @@ colorama
 - 5、进行验证：
 
 	```python
-	!python evaluate.py \
+	python evaluate.py \
 	    --model_path "./checkpoint/model_best" \
 	    --test_path "./data/cner/final_data/dev.txt" \
 	    --batch_size 16 \
