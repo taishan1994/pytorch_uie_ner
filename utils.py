@@ -387,6 +387,8 @@ def map_offset(ori_offset, offset_mapping):
     map ori offset to token offset
     """
     for index, span in enumerate(offset_mapping):
+        if index < 2:
+            continue
         if span[0] <= ori_offset < span[1]:
             return index
     return -1
